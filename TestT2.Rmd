@@ -1,0 +1,48 @@
+---
+output: html_document
+---
+
+## Tester {.tabset}
+
+### Plots
+
+We show a scatter plot in this section.
+
+```{r, fig.dim=c(5, 3)}
+par(mar = c(4, 4, .5, .1))
+plot(mpg ~ hp, data = mtcars, pch = 19)
+```
+
+```{r, echo=FALSE}
+library(shiny)
+
+shinyApp(
+
+  ui = fluidPage(
+    selectInput("region", "Region:",
+                choices = colnames(WorldPhones)),
+    plotOutput("phonePlot")
+  ),
+
+  server = function(input, output) {
+    output$phonePlot = renderPlot({
+      barplot(WorldPhones[,input$region]*1000,
+              ylab = "Number of Telephones", xlab = "Year")
+    })
+  },
+
+  options = list(height = 500)
+)
+```
+
+efwuifewigwefiuwge
+efwfeioh
+
+### Tables
+
+We show the data in this tab.
+
+```{r}
+head(mtcars)
+```
+
