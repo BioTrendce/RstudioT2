@@ -35,8 +35,11 @@ shinyApp(
 )
 ```
 
-efwuifewigwefiuwge
-efwfeioh
+#efwuifewigwefiuwge
+#efwfeioh
+
+Dette burde ikke være der
+
 
 ### Tables
 
@@ -46,3 +49,9 @@ We show the data in this tab.
 head(mtcars)
 ```
 
+```{r}
+
+fw<-450
+fw
+
+```
