@@ -51,7 +51,7 @@ head(mtcars)
 
 ```{r}
 
-fw<-450
+fw<-470
 fw
 
 ```
