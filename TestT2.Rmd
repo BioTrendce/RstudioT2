@@ -39,6 +39,7 @@ shinyApp(
 #efwfeioh
 
 Dette burde ikke være der
+Laver en ny ændring
 
 
 ### Tables
@@ -53,5 +54,8 @@ head(mtcars)
 
 fw<-470
 fw
+
+gg<-201
+gg
 
 ```
